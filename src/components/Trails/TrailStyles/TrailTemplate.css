@@ -1,0 +1,23 @@
+tr {
+    color: rgb(247, 247, 247);
+}
+
+.addButton{
+    margin-left: 2em;
+    border: none;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(136, 149, 161);
+}
+.addButton:hover{
+    transform: scale(1.1);
+    transition-duration: 185ms;
+}
+
+tbody  tr:first-child td button{
+    visibility: hidden;
+}
+tbody  tr:first-child td {
+    font-size: 1.3em;
+    text-decoration-line: underline;
+}

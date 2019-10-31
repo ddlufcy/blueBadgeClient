@@ -1,0 +1,31 @@
+body{
+    background-image: url('../../Assests/Imgs/pexels-photo-1.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100% 100%;
+    background-position: auto;
+
+}
+.splashForm{
+    background-color: #858073;
+    color: #f0ffff;
+    width: 30vw;
+    height: 25%;
+    margin: auto;
+    margin-top:8em;
+    opacity: 0.87;
+    filter: blur(.2px);
+    border-radius: 85px 6px 85px 6px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.splashForm:hover{
+    transform: scale(1.1);
+    background-color: #716d61;
+    transition-duration: 730ms;
+    opacity: 0.98;
+    border-radius: 20px 20px 20px 20px;
+    width: 33vw;
+    color: #fbffff;
+    -webkit-font-smoothing: antialiased;
+    filter: blur(0px);
+}

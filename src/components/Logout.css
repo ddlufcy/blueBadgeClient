@@ -1,0 +1,7 @@
+.logout{
+    height: 25px;
+    width: 30px;
+}
+.logoutButton:hover{
+    transition: scale(1.2);
+}

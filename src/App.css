@@ -1,0 +1,79 @@
+.App {
+    /* text-align: center; */
+  }
+  
+  /* body */
+  
+  body {
+    padding: 1px;
+    background-color: white;
+    font: Belleza;
+    color: #ECE4B7;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #716d61;
+    color: #fff;
+    margin-top: 10px;
+  }
+  footer p {
+    margin-top: 0.8em!important;
+    margin-left: 1.5em;
+  }
+  /* main */
+  
+  .main {
+    margin-top: 1em;
+    background-color: #7c7a75;
+    color: rgb(253, 251, 234);
+    /* height: 98%; */
+    min-height: 90%;
+    margin-bottom: 2.7em;
+    border-radius: 10px;
+  }
+  .mainDiv {
+    margin: auto;
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 1em;
+  }
+  .sidebar {
+    display: flex;
+    background-color: #01b552;
+    margin-top: 10px;
+  }
+  ul{
+    list-style-type: 'none';
+  }
+  /* sidebar */
+  .sidebar-list-styling{
+    padding-left: 8px;
+    padding-top: 15px;
+    width: 22%;
+    background-color: #01b552;
+    color: rgb(253, 251, 234);
+    font-size: 18px;
+    line-height: 1.7em;
+  }
+  .sidebar-list a {
+    color: #fff;
+    padding: 0;
+  }
+  .sidebar-route{
+    flex: 1;
+    padding: '00px';
+  }
+  /* header */
+  .header {
+    margin-top: 0.5em!important;
+    text-align: center;
+    background-color: #53565A;
+    color: #fff;
+  }
+  .header a {
+    color: #fff;
+  }
+  .header p {
+    margin-top: 0.8em!important;
+  }
