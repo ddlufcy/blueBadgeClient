@@ -63,6 +63,7 @@
   .sidebar-route{
     flex: 1;
     padding: '00px';
+    border-radius: 3em;
   }
   /* header */
   .header {
@@ -76,4 +77,10 @@
   }
   .header p {
     margin-top: 0.8em!important;
+  }
+  table{
+    text-align: left;
+  }
+  h3{
+    margin-top: 5px;
   }

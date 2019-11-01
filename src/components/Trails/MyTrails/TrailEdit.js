@@ -41,11 +41,10 @@ const TrailEdit = (props) => {
                        <Input name="location" value={editLocation} onChange={(e) => setEditLocation(e.target.value)} />
                    </FormGroup>
                    <FormGroup>
-                   <Label htmlFor="difficulty">Edit Difficulty</Label>
-                   <Input name="difficulty" value={editDifficulty} onChange={(e) => setEditDifficulty(e.target.value)} />
+                        <Label htmlFor="difficulty">Edit Difficulty</Label>
+                        <Input name="difficulty" value={editDifficulty} onChange={(e) => setEditDifficulty(e.target.value)} />
                    </FormGroup>
                    <Button type="submit">Update Trail</Button>
-                   <Button type="button" data-dismiss="modal" >Cancel</Button>
                </Form>
            </ModalBody>
        </Modal>

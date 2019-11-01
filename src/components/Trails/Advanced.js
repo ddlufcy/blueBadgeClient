@@ -43,8 +43,8 @@ const Advanced = (props) => {
         <div style={myStyle}>
             <h3>Advanced Trails</h3>
             <hr />
-            <table>
-                <tbody>
+            <table className="mainSidebarTable">
+                <tbody className="sidebarTable">
                     <Trail key={'column names'} testData={trailColumns} />  
                     {  
                         advancedTrails ? 

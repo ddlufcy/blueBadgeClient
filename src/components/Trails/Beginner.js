@@ -42,8 +42,8 @@ const B = (props) => {
         <div style={myStyle}>
             <h3>Beginner Trails</h3>
             <hr />
-            <table>
-                <tbody>
+            <table className="mainSidebarTable">
+                <tbody className="sidebarTable">
                     <Trail key={'column names'} testData={trailColumns} />  
                     {  
                         beginnerTrails ? 

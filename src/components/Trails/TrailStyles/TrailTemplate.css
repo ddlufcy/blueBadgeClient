@@ -14,10 +14,13 @@ tr {
     transition-duration: 185ms;
 }
 
-tbody  tr:first-child td button{
+.sidebarTable  tr:first-child td button{
     visibility: hidden;
 }
-tbody  tr:first-child td {
+.sidebarTable tr:first-child td {
     font-size: 1.3em;
     text-decoration-line: underline;
+}
+.mainSidebarTable{
+    margin-left: 4em;
 }
