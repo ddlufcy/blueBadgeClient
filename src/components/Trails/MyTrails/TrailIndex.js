@@ -3,6 +3,7 @@ import {Container, Row, Col} from 'reactstrap';
 import TrailCreate from './TrailCreate';
 import TrailTable from './TrailTable';
 import TrailEdit from './TrailEdit';
+import APIURL from '../../../helpers/environment';
 
 const TrailIndex = (props) => {
     const [trails, setTrails] = useState([]);
@@ -10,7 +11,7 @@ const TrailIndex = (props) => {
     const [trailToUpdate, setTrailToUpDate] = useState({});
 
     const fetchTrails = () => {
-        fetch("http://localhost:3001/userTrails/", {
+        fetch(`${APIURL}/userTrails/`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',

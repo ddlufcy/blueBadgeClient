@@ -1,11 +1,12 @@
 import React from 'react'
+import APIURL from '../../../helpers/environment'
 
 const AddButton = (props) => {
     
     const handleSubmit = (e) => {
         console.log(props.data)
         e.preventDefault();
-        fetch("http://localhost:3001/userTrails/addTrail", {
+        fetch(`${APIURL}/userTrails/addTrail`, {
             method: "POST",
             body: JSON.stringify(props.data),
             headers: new Headers({

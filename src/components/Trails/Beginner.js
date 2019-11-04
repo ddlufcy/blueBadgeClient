@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Trail from '../Trails/Trail/TrailTemplate';
+import APIURL from '../../../src/helpers/environment';
 
 
 const B = (props) => {
@@ -24,7 +25,7 @@ const B = (props) => {
 
     useEffect(() => { 
         console.log(props.token)
-        fetch('http://localhost:3001/trails/B', {
+        fetch(`${APIURL}/trails/B`, {
             method: 'GET',
             headers: {
                 'Content-Type' : 'application/json',

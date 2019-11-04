@@ -2,6 +2,8 @@
 import React, {useState} from 'react';
 import {Label, Button, Form} from 'reactstrap';
 import './Auth.css'
+import APIURL from '../../helpers/environment'
+
 const Auth = (props) =>{
 
     const formStyle={
@@ -29,7 +31,7 @@ const Auth = (props) =>{
    ) : null;
    const handleSubmit = (e) => {
        e.preventDefault();
-       const url = login ? 'http://localhost:3001/auth/signIn' : 'http://localhost:3001/auth/signUp'
+       const url = login ? `${APIURL}/auth/signIn` : `${APIURL}/auth/signUp`
        const bodyObj = login ? {
            username: username,
            password: password,

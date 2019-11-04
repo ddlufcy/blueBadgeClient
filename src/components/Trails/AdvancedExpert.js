@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Trail from '../Trails/Trail/TrailTemplate';
+import APIURL from '../../../src/helpers/environment';
 
 const AdvancedExpert = (props) => {
     const [advancedExpertTrails, setAdvancedExpertTrails] = useState([]);
@@ -23,7 +24,7 @@ const AdvancedExpert = (props) => {
 
     useEffect(() => { //post data from button click
         console.log(props.token)
-        fetch('http://localhost:3001/trails/AE', {
+        fetch(`${APIURL}/trails/AE`, {
             method: 'GET',
             headers: {
                 'Content-Type' : 'application/json',

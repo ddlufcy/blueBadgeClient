@@ -1,5 +1,6 @@
 import React from 'react';
-import '../TrailStyles/TrailTemplate.css'
+import '../TrailStyles/TrailTemplate.css';
+import APIURL from '../../../helpers/environment';
 
 const Trail = (props) => {
     const tdStyles = {
@@ -9,7 +10,7 @@ const Trail = (props) => {
     const handleSubmit = (e) => {
         console.log(props.testData)
         e.preventDefault();
-        fetch("http://localhost:3001/userTrails/addTrail", {
+        fetch(`${APIURL}/userTrails/addTrail`, {
             method: "POST",
             body: JSON.stringify(props.testData),
             headers: new Headers({

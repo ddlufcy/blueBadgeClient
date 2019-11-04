@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Trail from '../Trails/Trail/TrailTemplate';
+import APIURL from '../../../src/helpers/environment';
 
 
 const Intermediate = (props) => {
@@ -25,7 +26,7 @@ const Intermediate = (props) => {
 
     useEffect(() => { //post data from button click
         console.log(props.token)
-        fetch('http://localhost:3001/trails/I', {
+        fetch(`${APIURL}/trails/I`, {
             method: 'GET',
             headers: {
                 'Content-Type' : 'application/json',

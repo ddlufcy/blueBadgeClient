@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Button, Form, FormGroup, Label, Input, Modal, ModalHeader, ModalBody} from 'reactstrap';
+import APIURL from '../../../helpers/environment';
 
 
 const TrailEdit = (props) => {
@@ -10,7 +11,7 @@ const TrailEdit = (props) => {
     // Put
     const trailUpdate = (event, trail) => {
         event.preventDefault();
-        fetch(`http://localhost:3001/userTrails/${props.trailToUpdate.id}`, {
+        fetch(`${APIURL}/userTrails/${props.trailToUpdate.id}`, {
             method: 'PUT',
             body: JSON.stringify({name: editName, distance: editDistance, location: editLocation, difficulty: editDifficulty}),
             headers: new Headers({

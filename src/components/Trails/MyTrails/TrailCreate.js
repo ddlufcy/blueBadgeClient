@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Button, Form, FormGroup, Label, Input} from 'reactstrap';
 import '../TrailStyles/TrailCreate.css'
+import APIURL from '../../../helpers/environment'
 
 const TrailCreate = (props) => {
     const [name, setName] = useState('');
@@ -10,7 +11,7 @@ const TrailCreate = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch("http://localhost:3001/userTrails/addTrail", {
+        fetch(`${APIURL}/userTrails/addTrail`, {
             method: "POST",
             body: JSON.stringify({name: name, distance: distance, location: location, difficulty: difficulty}),
             headers: new Headers({

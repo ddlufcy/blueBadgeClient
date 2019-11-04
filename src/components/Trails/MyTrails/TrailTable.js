@@ -1,10 +1,11 @@
 import React from 'react';
 import {Table, Button} from 'reactstrap';
 import '../TrailStyles/TrailTable.css'
+import APIURL from '../../../helpers/environment';
 
 const TrailTable = (props) => {
     const deleteTrail = (trail) => {
-        fetch(`http://localhost:3001/userTrails/${trail.id}`, {
+        fetch(`${APIURL}/userTrails/${trail.id}`, {
             method: 'DELETE',
             headers: new Headers({
                 'Content-Type': 'application/json',
