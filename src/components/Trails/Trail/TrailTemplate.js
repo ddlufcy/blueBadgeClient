@@ -28,7 +28,7 @@ const Trail = (props) => {
                 <td>{props.testData.distance}</td>
                 <td>{props.testData.location}</td>
                 <td>{props.testData.difficulty}</td>
-                <td><button className="addButton" type="submit" onClick={handleSubmit}>Add</button>  </td>
+                <td><button className="addButton" type="submit"data-toggle="popover" title="Popover title" data-content="And here's some amazing content" onClick={handleSubmit}>Add</button>  </td>
             </tr>
  
     )

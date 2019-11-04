@@ -45,6 +45,8 @@ const TrailEdit = (props) => {
                         <Input name="difficulty" value={editDifficulty} onChange={(e) => setEditDifficulty(e.target.value)} />
                    </FormGroup>
                    <Button type="submit">Update Trail</Button>
+                  
+     
                </Form>
            </ModalBody>
        </Modal>

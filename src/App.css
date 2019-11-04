@@ -25,7 +25,8 @@
   
   .main {
     margin-top: 1em;
-    background-color: #7c7a75;
+    background: linear-gradient(#7c7a75, #9c9393e8);
+    /* background-color: #7c7a75; */
     color: rgb(253, 251, 234);
     /* height: 98%; */
     min-height: 90%;
@@ -50,7 +51,7 @@
   .sidebar-list-styling{
     padding-left: 8px;
     padding-top: 15px;
-    width: 22%;
+    width: 24%;
     background-color: #01b552;
     color: rgb(253, 251, 234);
     font-size: 18px;

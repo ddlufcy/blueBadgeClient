@@ -24,3 +24,6 @@ tr {
 .mainSidebarTable{
     margin-left: 4em;
 }
+.addButton:active{
+    transform: scale(1.4);
+}

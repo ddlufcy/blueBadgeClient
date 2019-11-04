@@ -1,0 +1,14 @@
+#updateButton{
+    width: -webkit-fill-available;
+    margin-bottom: .6em;
+}
+#updateButton:active{
+    transform: scale(1.2);
+}
+#deleteButton{
+    width: -webkit-fill-available;
+}
+#deleteButton:active{
+    width: -webkit-fill-available;
+    transform: scale(1.2);
+}

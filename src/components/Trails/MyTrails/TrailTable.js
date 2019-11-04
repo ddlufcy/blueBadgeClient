@@ -23,8 +23,8 @@ const TrailTable = (props) => {
                     <td>{trail.location}</td>
                     <td>{trail.difficulty}</td>
                     <td>
-                        <Button color="info" onClick={() =>{props.editUpdateTrail(trail); props.updateOn()}}>Update</Button>
-                        <Button color="danger" onClick={() => {deleteTrail(trail)}}>Delete</Button>
+                        <Button id="updateButton" color="info" onClick={() =>{props.editUpdateTrail(trail); props.updateOn()}}>Update</Button>
+                        <Button id="deleteButton" color="danger" onClick={() => {deleteTrail(trail)}}>Delete</Button>
                     </td>
                 </tr>
             )
