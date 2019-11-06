@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Trail from '../Trails/Trail/TrailTemplate';
 import APIURL from '../../../src/helpers/environment';
-
+import Hourglass from '../../Assests/Imgs/greyBike.jpg';
 
 const Intermediate = (props) => {
     const [intermediateTrails, setIntermediateTrails] = useState([]);

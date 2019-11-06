@@ -3,6 +3,7 @@ import Trail from '../Trails/Trail/TrailTemplate';
 import APIURL from '../../../src/helpers/environment';
 
 
+
 const Advanced = (props) => {
     const [advancedTrails, setAdvancedTrails] = useState([]);
 

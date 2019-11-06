@@ -32,7 +32,7 @@ const TrailTable = (props) => {
         })
     }
     return(
-        <>
+        <div className="trailTables">
         <h3>Trails</h3>
         <hr />
         <Table striped>
@@ -50,7 +50,7 @@ const TrailTable = (props) => {
                 {trailMapper()}
             </tbody>
         </Table>
-        </>
+        </div>
     )
 }
 

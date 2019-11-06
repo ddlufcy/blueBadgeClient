@@ -1,9 +1,33 @@
 body{
-    background-image: url('../../Assests/Imgs/pexels-photo-1.jpeg');
+    /* background-image: url('../../Assests/Imgs/pexels-photo-1.jpeg'); */
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     background-position: center center;
+    animation: moveIt 10s linear infinite;
+    animation-direction: alternate;  
+}
+body::before{
+    content:"RIDE";
+    color: rgba(0,0,0,0.5);
+    font-size: 400px;
+    top: 28%;
+    font-weight: 700;
+    /* animation: moveText 10 linear infinite; */
+    position: absolute;
+    animation: moveText 46s linear infinite;
+    animation-direction: alternate;  
+    z-index: -1;
+    
+}
+@keyframes moveText {
+    0% {left: 1.2em;}
+    100% {left: 0;}
+    }
 
+@keyframes moveIt {
+    0%   {background-image: url('../../Assests/Imgs/pexels-photo-1.jpeg');content: "RIDE"; }
+    100% {background-image: url('../../Assests/Imgs/pexel.jpeg');content: "Mountain";}
 }
 .splashForm{
     background-color: #858073;
@@ -15,17 +39,36 @@ body{
     opacity: 0.87;
     filter: blur(.2px);
     border-radius: 85px 6px 85px 6px;
+    font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-
 .splashForm:hover{
     transform: scale(1.1);
     background-color: #716d61;
     transition-duration: 730ms;
     opacity: 0.98;
     border-radius: 20px 20px 20px 20px;
-    width: 33vw;
+    width: 30vw;
     color: #fbffff;
     -webkit-font-smoothing: antialiased;
     filter: blur(0px);
+}
+
+@media only screen and (max-width: 623px) {
+    body {
+        width: 60vw;
+        margin-bottom: 3em;
+
+    }
+    #username{
+        width: -webkit-fill-available;
+    }
+    #password {
+        width: -webkit-fill-available;
+    }
+    .splashForm{
+        width: 50vw;
+        margin: 37vw;
+    }
+
 }

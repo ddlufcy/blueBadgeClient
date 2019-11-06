@@ -8,7 +8,6 @@ const Auth = (props) =>{
 
     const formStyle={
         textAlign: "center",
-
     }
 
    const [username, setUsername]= useState('');
@@ -62,7 +61,7 @@ const Auth = (props) =>{
          <br/>
          <Label htmlFor='password'>Password:</Label>
          <br/>
-         <input style={{marginBottom: ".1em", borderRadius: "4px", height: '2.1em', border: "none"}}type='password' id='password' placeholder='at least 6 letters' value={password}  pattern="(?=.*[a-z]).{6,12}" onChange={(e)=> setPassword(e.target.value)} required/>
+         <input style={{marginBottom: ".1em", borderRadius: "4px", height: '2.1em', border: "none"}}type='password' id='password' placeholder='6 to 12 lowercase letters' value={password}  pattern="(?=.*[a-z]).{6,12}" onChange={(e)=> setPassword(e.target.value)} required/>
          <br/>
          {/* <Label htmlFor='password'> Confirm Password:</Label> */}
          <br />

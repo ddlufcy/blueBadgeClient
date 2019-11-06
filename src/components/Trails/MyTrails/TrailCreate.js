@@ -30,7 +30,7 @@ const TrailCreate = (props) => {
         .catch(err => console.log(err))
     }
     return(
-        <>
+        <div className="createTrailForm">
             <h3>Make a trail</h3>
             <Form onSubmit={handleSubmit}>
                 <FormGroup>
@@ -51,7 +51,7 @@ const TrailCreate = (props) => {
                 </FormGroup>
                 <Button type="submit" color="success" >Click to Submit</Button>
             </Form>
-        </>
+        </div>
     )
 }
 

@@ -10,6 +10,13 @@
     font: Belleza;
     color: #ECE4B7;
   }
+h1{
+  font-family: 'Blinker', sans-serif;
+  font-size: 3em;
+  margin-bottom: 0;
+  text-shadow: 2px 2px #000000;
+}
+
   
   /* Footer */
   footer {
@@ -32,13 +39,19 @@
     min-height: 90%;
     margin-bottom: 2.7em;
     border-radius: 10px;
+    font-family: 'Blinker', sans-serif;
+  }
+  .welcome{
+    width: 71vw;
   }
   .mainDiv {
     margin: auto;
     width: 90%;
     padding: 5px;
     margin-bottom: 1em;
-  }
+    font-size: 1.3em;
+    font-variant: petite-caps;
+}
   .sidebar {
     display: flex;
     background-color: #01b552;
@@ -85,3 +98,24 @@
   h3{
     margin-top: 5px;
   }
+
+  @media only screen and (max-width: 623px) {
+    .main{
+      margin: 5vw;
+      width: 90vw;
+    }
+    .sidebar{
+      display: block;
+    }
+    .sidebar-list-styling{
+      width: 20vw;
+      font-size: 17px;
+      text-align: start;
+      white-space: nowrap;
+      padding-left: 25px;
+    }
+    .splashForm{
+      margin: 28vw;
+    }
+  }
+  
