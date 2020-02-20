@@ -1,5 +1,4 @@
-####
-link to finished site:
+#### Finished Site
 https://ddl-bluebadge-client.herokuapp.com/
 
 
